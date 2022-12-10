@@ -26,16 +26,15 @@ envir = 'hubble'
 if envir == 'local':
     config_file = 'Config/config_CascadeTabNet_1.py'
     checkpoint_file = gdown_model_output_dir + '/epoch_30.pth'
-    image_path = '/content/CascadeTabNet/Data/chunk_images'
-    xmlPath = '/content/CascadeTabNet/Data/orig_chunk'
-    xmlPath_write = '/content/CascadeTabNet/Data/infer_res/'
+    image_path = xmlPath + '/chunk_images'
+    xmlPath = xmlPath + '/orig_chunk'
+    xmlPath_write = xmlPath + '/infer_res/'
 else:
     config_file = 'Config/config_CascadeTabNet_1.py'
     checkpoint_file = gdown_model_output_dir + '/epoch_30.pth'
-    image_path = '/data/cs_lzhan011/project/CascadeTabNet/Data/chunk_images'
-    image_path = '/data/cs_lzhan011/project/CascadeTabNet/Data/test_4_images'
-    xmlPath = '/data/cs_lzhan011/project/CascadeTabNet/Data/orig_chunk'
-    xmlPath_write = '/data/cs_lzhan011/project/CascadeTabNet/Data/infer_res/'
+    image_path = xmlPath + '/chunk_images'
+    xmlPath = xmlPath + '/orig_chunk'
+    xmlPath_write = xmlPath + '/infer_res/'
 
 
 model = init_detector(config_file, checkpoint_file)
