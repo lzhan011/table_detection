@@ -9,9 +9,9 @@ import os
 import gdown
 os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 
-gdown_url = 'https://drive.google.com/file/d/1dCT-OJUEQuGmFlEs86387PhYEsSz1ZcO/view?usp=sharing'
+gdown_model_url = 'https://drive.google.com/file/d/1IATqgV8GAGTmCJlqTD92kINcl8r8wSeJ/view?usp=sharing'
 gdown_model_output_dir = 'model_dir'
-gdown.download(gdown_url, gdown_model_output_dir)
+gdown.download(gdown_model_url, gdown_model_output_dir)
 
 gdown_dataset_dir = 'dataset_dir'
 # 19qMDNMWgw04T0HCQ_jADq1OvycF3zvuO
