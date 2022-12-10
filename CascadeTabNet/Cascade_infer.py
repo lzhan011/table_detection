@@ -13,7 +13,13 @@ gdown_url = 'https://drive.google.com/file/d/1dCT-OJUEQuGmFlEs86387PhYEsSz1ZcO/v
 gdown_model_output_dir = 'model_dir'
 gdown.download(gdown_url, gdown_model_output_dir)
 
-# before conduct this code, please conduct the code of mmdetection install
+gdown_dataset_dir = 'dataset_dir'
+# 19qMDNMWgw04T0HCQ_jADq1OvycF3zvuO
+gdown_dataset_url = 'https://drive.google.com/drive/folders/14ZYVF3hxrvkMnRI0wdKveuDs9FPSlKSu?usp=sharing'
+gdown.download(gdown_dataset_url, gdown_dataset_dir)
+
+# before conduct this code, please conduct the code of mmdetection install, gdown the model file from gdrive, gdown the dataset from gdrive
+
 
 envir = "local"
 envir = 'hubble'
