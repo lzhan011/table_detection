@@ -7,8 +7,7 @@ CascadTabNet is an automatic table recognition method for interpretation of tabu
 <img src="imgs/main_res.png"/>
 
 ## 2. Setup
-<b>Models are developed in Pytorch based <a href="https://github.com/open-mmlab/mmdetection">MMdetection</a> framework (Version 1.2)</b>
-<br>
+
 
 <pre>
 !conda create -n openmmlab python=3.7 pytorch==1.6.0 cudatoolkit=10.1 torchvision -c pytorch -y
